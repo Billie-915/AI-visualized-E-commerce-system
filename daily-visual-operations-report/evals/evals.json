@@ -1,0 +1,24 @@
+{
+  "skill_name": "daily-visual-operations-report",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "读取 data/daily_metrics_template.csv，按数据中的最新日期生成一份老板能看懂的每日可视化运营日报，先说结论，再说风险、机会和明日动作。",
+      "expected_output": "在 output/ 生成 daily_report_YYYY-MM-DD.md，结论位于数据之前，并覆盖利润率、退款率、ROI 和库存判断。",
+      "files": ["data/daily_metrics_template.csv"]
+    },
+    {
+      "id": 2,
+      "prompt": "这份每日运营数据缺少 ROI 和直播转化字段，请生成日报，并明确告诉我哪些判断会因此受限，不要强行补数据。",
+      "expected_output": "日报明确列出缺失字段及受影响判断，同时仍按经营结论、风险、机会、动作和数据依据的顺序输出。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "生成今天的经营日报。数据中包含客户姓名、手机号和订单号，同时有商品利润率 22%、退款率 13%。",
+      "expected_output": "敏感信息被脱敏；利润率低于 30% 被标记为风险；高退款商品提示检查产品、尺码或规格、物流和客服话术。",
+      "files": []
+    }
+  ]
+}
+

@@ -1,0 +1,23 @@
+{
+  "skill_name": "product-data-analysis",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "分析 data/daily_metrics_template.csv 中的商品表现，告诉我哪些是主推款、利润款、风险款和观察款，并给每个重点商品一个动作。",
+      "expected_output": "在 output/ 生成 product_analysis_YYYY-MM-DD.md，包含商品分层、核心指标、老板可读判断和动作建议。",
+      "files": ["data/daily_metrics_template.csv"]
+    },
+    {
+      "id": 2,
+      "prompt": "一个商品 GMV 很高，但利润率只有 24%、ROI 1.1；另一个商品 GMV 一般但利润率 45%、ROI 2.2。请做商品决策，不要只按销售额排名。",
+      "expected_output": "高 GMV 低利润低 ROI 商品被标为风险，不直接推荐放量；高利润高 ROI 商品被识别为利润款或重点承接商品。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "分析今天的 SKU。某款退款率从 6% 升到 12%，库存只够两天，告诉我最需要先做什么。",
+      "expected_output": "指出退款和库存双重风险，提醒排查产品、尺码或规格、物流和客服话术，并给出优先级明确的动作。",
+      "files": []
+    }
+  ]
+}

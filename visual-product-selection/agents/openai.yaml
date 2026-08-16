@@ -1,0 +1,4 @@
+interface:
+  display_name: "可视化选品工作流"
+  short_description: "从市场调研到多维表、分析文档与HTML看板的一体化选品流程"
+  default_prompt: "请按可视化选品流程，搜集竞品数据，创建飞书多维表，生成可读的分析文档，并发布HTML看板。"
