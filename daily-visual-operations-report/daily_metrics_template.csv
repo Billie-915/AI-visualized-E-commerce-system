@@ -1,0 +1,2 @@
+date,store,channel,product_name,product_id,sku,gmv,orders,average_order_value,cost,profit,profit_margin,refund_rate,roi,inventory,material_impressions,material_clicks,material_ctr,live_viewers,live_buyers,live_conversion_rate,notes
+2026-08-15,示例店铺,抖音,示例商品,P001,SKU001,10000,120,83.33,6500,3500,0.35,0.04,2.5,300,50000,2500,0.05,8000,160,0.02,示例数据，可删除后替换
